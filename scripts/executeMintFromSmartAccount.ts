@@ -20,7 +20,7 @@ async function main() {
     "ERC1155BoundedAccount", accountAddress
   );
    
-  // Mint with the magician signature
+  // Mint with the signer signature
   // ERC1155Ownable · the account should mint
   // ERC1155OnlyFirstMinter · the account should mint
   // ERC1155LimitedSupply · the account should mint
