@@ -52,8 +52,11 @@ It includes the addresses of `ERC1155FirstMinter` and `ERC1155LimitedSupply`, fe
 ## Create Accounts
 After that, we are ready to create our Token Bounded Accounts through the ERC6551Registry contract. 
 For testing I have been creating the Token Bounded Accounts trough PolygonScan.
-(tomorrow I will provide an script to do that too, in the meantime you may use PolygonScan to call the`createAccount` function)
-The transaction parameters should look like that:
+But, a script to do that can be found at `scripts/createAccounts.ts`, fill it with the right addresses and run it:
+```
+npx hardhat run scripts/createAccounts.ts
+```
+The transaction parameters should look like that (in case you go trough PolygonScan):
 ```
 createAccount(
   implementationAddress, // the erc1155BoundedAccount address from the deployAccount script.
