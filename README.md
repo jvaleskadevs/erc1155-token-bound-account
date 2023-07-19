@@ -9,6 +9,12 @@ git clone https://github.com/jvaleskadevs/erc1155-token-bound-account.git
 ```
 npm install
 ```
+- Copy the `.env.sample` and fill it with your environment variables:
+```
+cp .env.sample .env
+```
+You will need 3 private keys (signer, helper and non-holder), an RPC url and an optional PolygonScan apiKey.
+
 ## Deploy
 - Deploy ERC-6551 Registry:
 ```
@@ -22,7 +28,7 @@ npx hardhat run scripts/deployAccount.ts
 ```
 npx hardhat run scripts/deployNFTs.ts
 ```
-It deploys an ERC-721 NFT contract too, we will be minting some of these NFTs to test our ERC-1155 Token Bounded Account.
+It will deploy an ERC-721 NFT contract too, we will be minting some of these NFTs to test our ERC-1155 Token Bounded Account.
 
 ## Minting the ERC-1155 tokens to bound accounts to
 First, we need to mint the ERC-1155 tokens to bound our smart accounts to them.
