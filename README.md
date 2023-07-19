@@ -1,4 +1,5 @@
 # ERC-1155 Token Bound Account
+## ERC-6551 for ERC-1155 tokens
 ERC-1155 token bound account is an approximation to an implementation of ERC-6551 supporting ERC-1155 tokens instead ERC-721.
 
 The ERC-1155 token bounded accounts supports creating ERC-1155 token bounded accounts trough ERC6551Registry and they are compliant with ERC-165, ERC-1271 and with the ERC-6551Registry, obviously. A pending improvement proposal to ERC6551 may give full compatibility to this implementation in the future. Or it may be reached trough minor changes.
