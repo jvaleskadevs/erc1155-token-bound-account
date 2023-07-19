@@ -1,5 +1,5 @@
 # ERC-1155 Token Bound Account
-
+ERC-1155 token bound account is an approximation to an implementation of ERC-6551 supporting ERC-1155 tokens instead ERC-721.
 ## Setup
 - Clone the repo:
 ```
