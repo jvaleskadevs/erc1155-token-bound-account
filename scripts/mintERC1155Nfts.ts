@@ -41,7 +41,8 @@ async function main() {
   }
   
   // Mint ERC1155 FirstMinter
-  const ERC1155FirstMinter = "0x65A868c2944f21fc6b9A79e2E864FDdaf7b6c377"; // address from deployNFTs.ts
+  const ERC1155FirstMinter = 
+    "0x65A868c2944f21fc6b9A79e2E864FDdaf7b6c377"; // address from deployNFTs.ts
   
   nft = await ethers.getContractAt(
     "ERC1155OnlyFirstMinter", ERC1155FirstMinter
@@ -80,7 +81,8 @@ async function main() {
   } 
 
   // Mint ERC1155 Limited Supply
-  const ERC1155LimitedSupply  = "0x0B1a5c603d79AfC6B0D2B7ba3CE8dA196449Fc4A"; // address from deployNFTs.ts
+  const ERC1155LimitedSupply  = 
+    "0x0B1a5c603d79AfC6B0D2B7ba3CE8dA196449Fc4A"; // address from deployNFTs.ts
   nft = await ethers.getContractAt(
     "ERC1155LimitedSupply", ERC1155LimitedSupply
   );
