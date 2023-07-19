@@ -1,5 +1,14 @@
 # ERC-1155 Token Bound Account
 ERC-1155 token bound account is an approximation to an implementation of ERC-6551 supporting ERC-1155 tokens instead ERC-721.
+
+The ERC-1155 token bounded accounts supports creating ERC-1155 token bounded accounts trough ERC6551Registry and they are compliant with ERC-165, ERC-1271 and with the ERC-6551Registry, obviously. A pending improvement proposal to ERC6551 may give full compatibility to this implementation in the future. Or it may be reached trough minor changes.
+These token bound account are supporting ERC777, ERC1155 and ERC721 receiver interfaces, too.
+
+The main problem with ERC1155 NFTs and ERC6551 is semi-fungibility. We are proposing 3 basic approaches to deal with that:
+- ERC-1155 Ownable -> the basic ERC-1155 sample from the Oz's wizard. (it requires 1 ERC-1155 contract per user)
+- ERC-1155 Only First Minter -> the first minter of any ID becomes the owner of this ID, the only one able to mint new tokens with this ID aka the ID owner. This is the most decentralized and efficient of the 3. It requires one token ID per user and allow multiple owners as the previous one.
+- ERC-1155 Limited Supply -> ERC-721 fungibility capabilities implemented trough limitation of supply per ID to 1. Only one owner per ID. Does not allow multiples signers by default. A developer may implement this behavior trough other ways, tho.
+
 ## Setup
 - Clone the repo:
 ```
