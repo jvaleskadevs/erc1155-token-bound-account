@@ -12,7 +12,7 @@ interface IERC6551Registry {
         uint256 salt
     );
 
-    /// @dev Creates a token bound account for an ERC-721 token.
+    /// @dev Creates a token bound account for an ERC-1155 token.
     ///
     /// If account has already been created, returns the account address without calling create2.
     ///
